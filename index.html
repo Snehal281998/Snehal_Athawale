@@ -3,99 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Agricultural Economics Archive</title>
+    <title>Agricultural Economics Data Archive – Trade & Markets</title>
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
+            line-height: 1.7;
+            color: #2f2f2f;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 25px;
             background-color: #f4f7f6;
         }
+
         header {
             text-align: center;
-            border-bottom: 3px solid #2c5e50;
-            margin-bottom: 30px;
+            border-bottom: 3px solid #1b4332;
+            margin-bottom: 35px;
             padding-bottom: 10px;
         }
-        h1 { color: #2c5e50; margin-bottom: 5px; }
-        .tagline { font-style: italic; color: #666; }
-        .data-section {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+
+        h1 { color: #1b4332; margin-bottom: 5px; }
+
+        .tagline {
+            font-style: italic;
+            color: #555;
         }
-        h2 { border-left: 5px solid #8ba88e; padding-left: 10px; color: #444; }
+
+        .data-section {
+            background: #ffffff;
+            padding: 22px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            border-left: 6px solid #588157;
+            padding-left: 12px;
+            color: #344e41;
+        }
+
         ul { list-style: none; padding: 0; }
-        li { margin-bottom: 12px; padding: 8px; border-bottom: 1px solid #eee; }
+
+        li {
+            margin-bottom: 14px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
         li:last-child { border-bottom: none; }
-        a { color: #2e7d32; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; color: #1b5e20; }
-        .source-desc { font-size: 0.9em; color: #555; display: block; }
-        footer { text-align: center; font-size: 0.8em; color: #888; margin-top: 40px; }
+
+        a {
+            color: #2d6a4f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #1b4332;
+        }
+
+        .source-desc {
+            font-size: 0.92em;
+            color: #555;
+            display: block;
+            margin-top: 4px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>The Agricultural Economics Archive</h1>
-        <p class="tagline">A curated hub for essential datasets and economic intelligence.</p>
-    </header>
+<header>
+    <h1>Agricultural Economics Data Archive</h1>
+    <p class="tagline">Curated datasets for trade, markets, policy, and empirical research</p>
+</header>
 
-    <div class="data-section">
-        <h2>Global Production & Statistics</h2>
-        <ul>
-            <li>
-                <a href="https://www.fao.org/faostat/en/" target="_blank">FAOSTAT (UN FAO)</a>
-                <span class="source-desc">The gold standard for global agriculture data: production, trade, land use, and food security indicators.</span>
-            </li>
-            <li>
-                <a href="https://data.worldbank.org/topic/agriculture-and-rural-development" target="_blank">World Bank: Agriculture & Rural Development</a>
-                <span class="source-desc">Macro-economic indicators including agricultural value added (% of GDP) and rural employment stats.</span>
-            </li>
-        </ul>
-    </div>
+<!-- GLOBAL TRADE DATA -->
+<div class="data-section">
+    <h2>Global Agricultural Trade Databases</h2>
+    <ul>
+        <li>
+            <a href="https://www.fao.org/faostat/en/" target="_blank">FAOSTAT Trade</a>
+            <span class="source-desc">Comprehensive global agricultural trade flows (1961–present) across commodities and countries.</span>
+        </li>
 
-    <div class="data-section">
-        <h2>Markets, Prices & Projections</h2>
-        <ul>
-            <li>
-                <a href="https://www.ers.usda.gov/data-products/" target="_blank">USDA Economic Research Service (ERS)</a>
-                <span class="source-desc">Essential for U.S. and global commodity outlooks, farm income forecasts, and trade data.</span>
-            </li>
-            <li>
-                <a href="https://www.amis-outlook.org/" target="_blank">AMIS (Agricultural Market Information System)</a>
-                <span class="source-desc">Inter-agency platform focusing on market transparency for wheat, maize, rice, and soybeans.</span>
-            </li>
-            <li>
-                <a href="https://fpma.apps.fao.org/giews/food-prices/tool/public/" target="_blank">GIEWS Food Price Monitoring</a>
-                <span class="source-desc">Tool for monitoring domestic food prices in over 80 countries.</span>
-            </li>
-        </ul>
-    </div>
+        <li>
+            <a href="https://comtrade.un.org/" target="_blank">UN Comtrade</a>
+            <span class="source-desc">Highly disaggregated bilateral trade data using HS/SITC classifications; essential for gravity modelling.</span>
+        </li>
 
-    <div class="data-section">
-        <h2>Policy & Research Portals</h2>
-        <ul>
-            <li>
-                <a href="https://www.ifpri.org/publications/datasets" target="_blank">IFPRI Open Data</a>
-                <span class="source-desc">International Food Policy Research Institute's repository for household surveys and food policy modeling.</span>
-            </li>
-            <li>
-                <a href="https://upag.gov.in/" target="_blank">Unified Portal for Agricultural Statistics (UPAg)</a>
-                <span class="source-desc">Real-time information on crop estimates, prices, and procurement (India-specific but a model for data portals).</span>
-            </li>
-        </ul>
-    </div>
+        <li>
+            <a href="https://wits.worldbank.org/" target="_blank">World Bank WITS</a>
+            <span class="source-desc">Trade data combined with tariffs and non-tariff measures for policy analysis.</span>
+        </li>
 
-    <footer>
-        <p>This site is hosted using GitHub Pages. &copy; 2026</p>
-    </footer>
+        <li>
+            <a href="https://www.trademap.org/" target="_blank">ITC Trade Map</a>
+            <span class="source-desc">Export competitiveness indicators, market shares, and bilateral trade insights.</span>
+        </li>
+
+        <li>
+            <a href="https://stats.oecd.org/" target="_blank">OECD Trade & Agriculture</a>
+            <span class="source-desc">Producer support estimates and trade policy indicators across developed economies.</span>
+        </li>
+    </ul>
+</div>
+
+<!-- INDIAN TRADE DATA -->
+<div class="data-section">
+    <h2>Indian Agricultural Trade Databases</h2>
+    <ul>
+        <li>
+            <a href="https://agriexchange.apeda.gov.in/" target="_blank">APEDA Agri Exchange</a>
+            <span class="source-desc">India’s primary dataset for commodity-wise and country-wise agricultural exports and imports.</span>
+        </li>
+
+        <li>
+            <a href="https://commerce.gov.in/statistics/" target="_blank">DGCIS Trade Statistics</a>
+            <span class="source-desc">Official merchandise trade data of India at aggregated and disaggregated levels.</span>
+        </li>
+
+        <li>
+            <a href="https://www.indiantradeportal.in/" target="_blank">India Trade Portal</a>
+            <span class="source-desc">Tariffs, SPS measures, export procedures, and trade agreements.</span>
+        </li>
+
+        <li>
+            <a href="https://tradestat.commerce.gov.in/" target="_blank">Export Import Data Bank (MoC)</a>
+            <span class="source-desc">HS code-based trade data for detailed commodity-level empirical analysis.</span>
+        </li>
+
+        <li>
+            <a href="https://dbie.rbi.org.in/" target="_blank">RBI Database (DBIE)</a>
+            <span class="source-desc">Macroeconomic indicators including trade balance and exchange rates.</span>
+        </li>
+    </ul>
+</div>
+
+<!-- MARKETS & PRICES -->
+<div class="data-section">
+    <h2>Markets, Prices & Commodity Intelligence</h2>
+    <ul>
+        <li>
+            <a href="https://www.ers.usda.gov/data-products/" target="_blank">USDA ERS</a>
+            <span class="source-desc">Global commodity outlooks, farm income, and agricultural trade projections.</span>
+        </li>
+
+        <li>
+            <a href="https://www.amis-outlook.org/" target="_blank">AMIS</a>
+            <span class="source-desc">Market intelligence for wheat, rice, maize, and soybean with trade and stock data.</span>
+        </li>
+
+        <li>
+            <a href="https://fpma.apps.fao.org/giews/food-prices/tool/public/" target="_blank">FAO GIEWS Prices</a>
+            <span class="source-desc">Retail and wholesale food price monitoring across countries.</span>
+        </li>
+
+        <li>
+            <a href="https://www.imf.org/en/Research/commodity-prices" target="_blank">IMF Commodity Prices</a>
+            <span class="source-desc">Monthly international commodity prices used in price transmission studies.</span>
+        </li>
+    </ul>
+</div>
+
+<!-- PRODUCTION & MACRO -->
+<div class="data-section">
+    <h2>Production, Macro & Structural Indicators</h2>
+    <ul>
+        <li>
+            <a href="https://data.worldbank.org/topic/agriculture-and-rural-development" target="_blank">World Bank Agriculture Data</a>
+            <span class="source-desc">Agricultural GDP, employment, and structural transformation indicators.</span>
+        </li>
+
+        <li>
+            <a href="https://www.fao.org/faostat/en/" target="_blank">FAOSTAT Production</a>
+            <span class="source-desc">Global crop production, land use, and food balance sheets.</span>
+        </li>
+
+        <li>
+            <a href="https://upag.gov.in/" target="_blank">UPAg Portal (India)</a>
+            <span class="source-desc">Unified agricultural statistics including crop estimates and procurement data.</span>
+        </li>
+    </ul>
+</div>
+
+<!-- POLICY & RESEARCH -->
+<div class="data-section">
+    <h2>Policy, Surveys & Research Data</h2>
+    <ul>
+        <li>
+            <a href="https://www.ifpri.org/publications/datasets" target="_blank">IFPRI Datasets</a>
+            <span class="source-desc">Household surveys and food policy modelling datasets.</span>
+        </li>
+
+        <li>
+            <a href="https://www.indiastatagri.com/" target="_blank">IndiaStat Agriculture</a>
+            <span class="source-desc">Integrated Indian datasets on production, trade, prices, and inputs.</span>
+        </li>
+
+        <li>
+            <a href="https://www.indiabudget.gov.in/economicsurvey/" target="_blank">Economic Survey of India</a>
+            <span class="source-desc">Analytical insights on agricultural trade, policy, and structural change.</span>
+        </li>
+    </ul>
+</div>
+
+<footer>
+    <p>Designed for academic and policy research | Hosted via GitHub Pages | © 2026</p>
+</footer>
 
 </body>
 </html>
